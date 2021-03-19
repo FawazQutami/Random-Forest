@@ -97,7 +97,7 @@ if __name__ == '__main__':
     Increasing the number of trees until the accuracy begins to stop showing improvement. 
     This may take a long time, but will not over-fit the training data.
     """
-    rm = RandomForest(n_trees=20, max_depth=10)
+    rm = RandomForest(n_trees=5, max_depth=10)
     rm.fit(X_train, y_train)
 
     y_prediction = rm.predict(X_test)
